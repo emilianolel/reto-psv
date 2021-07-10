@@ -1,6 +1,5 @@
 # Reto-Intelimetrica
 
-Esta es mi solución al reto de Intelimétrica
 ## Nombre: :alien:
 
 :space_invader: José Emiliano Herrera Velázquez
@@ -12,3 +11,8 @@ Esta es mi solución al reto de Intelimétrica
 	</a>
 	<br>
 </div>
+
+Esta es mi solución al reto de Intelimétrica
+
+## Solución :sunglasses:
+:point_right: Después de descargar el archivo [starts_data.csv](https://recruiting-datasets.s3.us-east-2.amazonaws.com/starts_data.csv) apliqué un `head starts_data.csv`
