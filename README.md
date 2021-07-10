@@ -24,7 +24,10 @@ Esta es mi solución al reto de Intelimétrica
 
 :point_right: Una vez realizada la limpieza de los puntos anteriormente mencionados obtenemos un "dataframe" de dimensión 119615 registros y 37 campos.
 
-### Programa de limpieza (recuperación) del archivo
+### Programa de limpieza (recuperación) del archivo.
+##### Importante, antes de correr el archivo hay que dar permisos de ejecución, lectura y escritura al script así que ejecutar:
+
+`chmod 777 limpieza.sh`
 
 :point_right: Este programa fué escrito en bash. Hace uso de los comandos `awk` y `sed`. Y se usa de la siguiente manera en la terminal:
 
