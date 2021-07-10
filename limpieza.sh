@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# El objetivo de este programa es limpirar el .csv corrupto y ayudar a los científicos a recuperar
+# esta valiosa información.
+
+# El archivo a limpiar se guarda en la variable archivo
 archivo=$1
 
-# Se crea una carpeta llamada archivos
+# Se crea una carpeta llamada archivos que es donde se guardarán los archivos .csv y .psv limpios
+# y listos para su análisis.
 mkdir archivos
 
 # Primero se elimina la primera línea del archivo "starts_data.csv".
@@ -24,7 +29,8 @@ awk 'BEGIN {FS=","} END {printf "Número de filas: %s\nNúmero de columnas %s\n"
 # Se le asigna el número de campos a la variable cols
 cols=`awk 'BEGIN{FS=","} END{printf NF}' archivos/aux.csv`
 
-# Se crea un archivo llamado final.csv
+# Se crea un directorio llamado aux dentro del directorio archivos, donde se guardaran unos archivos 
+# auxiliares.
 mkdir archivos/aux
 
 # Realizamos un ciclo for para agregar las comillas a todos los valores del archivo.
@@ -45,7 +51,7 @@ paste -d , $aux_files > archivos/clean_starts_data.csv
 # Se elimina el directorio aux
 rm -r archivos/aux/ archivos/aux.csv
 
-# Se crea el archivo .psv
+# Se crea el archivo .psv llamado "clean_starts_data.csv"
 sed "s/,/|/g" archivos/clean_starts_data.csv > archivos/clean_starts_data.psv
 
 
