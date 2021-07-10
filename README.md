@@ -48,6 +48,8 @@ https://recruiting-datasets.s3.us-east-2.amazonaws.com/starts_data.csv
 ### Análisis exploratorio
 :point_right: Después de descargar el archivo [starts_data.csv](https://recruiting-datasets.s3.us-east-2.amazonaws.com/starts_data.csv) apliqué los comandos `head starts_data.csv` y `tail starts_data.csv` que muestran los primeros y últimos 5 registros del archivo en cuestión.
 
+![head](Imagenes/1.png)
+![tail](Imagenes/2.png)
 
 :point_right: Se observa que la primera línea del archivo es un caracter que no sirve, así como la última. Además, los nombres de los campos están separadas por "~", los primeros registros están separados por comas y los últimos por tabuladores. 
 
@@ -67,6 +69,10 @@ En este caso sería:
 `./limpieza.sh starts_data.csv`
 
 :point_right: Esto arroja un directorio llamado "archivos" donde se alojan los .csv y .psv con los datos límpios.
+
+![archivos](Imagenes/3.png)
+
+![clean](Imagenes/4.png)
 
 :point_right: Por último, con el comando `file -bi` observamos que los archivos con los datos limpios están en formato "us-ascii" lo que significa que están codificados en "utf-8" ya que estos primeros son como un "subconjunto de utf-8" [Force encode from US-ASCII to UTF-8 (iconv)
 ](https://stackoverflow.com/questions/11303405/force-encode-from-us-ascii-to-utf-8-iconv).
