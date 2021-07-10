@@ -3,6 +3,9 @@
 # El objetivo de este programa es limpirar el .csv corrupto y ayudar a los científicos a recuperar
 # esta valiosa información.
 
+# Este programa extrae los datos del archivo corrupto y los recupera en el formato requrido. Y los guarda en
+# un directorio llamado archivos.
+
 # El archivo a limpiar se guarda en la variable archivo
 archivo=$1
 
