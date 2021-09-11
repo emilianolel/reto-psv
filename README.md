@@ -12,8 +12,6 @@
 	<br>
 </div>
 
-Esta es mi solución al reto de Intelimétrica
-
 ## Instrucciones :open_mouth:
 
 ### Misión  IM-DE-1
